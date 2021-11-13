@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Project: Contact Form with Email</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	
+	<script>
+	
+	</script>
+	<style>
+		#contactForm p:nth-child(3){
+			display: none;	
+		}
+	
+	</style>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="jumbotron" style="margin: 0;">
+			<h2 style="text-align: center;">Project: Contact Form with Email</h2>
+		</div>
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Placeholder</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Placeholder</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+						Placeholder Dropdown link
+					</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Placeholder</a>
+						<a class="dropdown-item" href="#">Placeholder</a>
+						<a class="dropdown-item" href="#">Placeholder</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<div class="row" style="height: 500px;">
+			<div class="col-2" style="background-color: lightslategray;"></div>
+			<div class="col" >
+				<div class="row" style="height: 500px;">
+					<div class="col-8" style="background-color:azure;" >
+						<h3 style="text-align: center;">Looking to get ahold of us? Send a message!</h3>
+
+						<form id="contactForm" name="contactForm" method="post" action="formHandler.php">
+							<p>
+								<label for="contact_Name" class="mr-sm-3">Contact Name:</label>
+								<input type="text" class="contact_Name; mr-sm-5" name="contact_Name" id="contact_Name">
+							</p>
+							<p>
+								<label for="contact_Email" class="mr-sm-3">Email Address:</label>
+								<input type="email" class="contact_Email" name="contact_Email" id="contact_Email">
+							</p>
+							<p class="contact">
+								<label for="contact_phone_number" class="mr-sm-3">Phone Number:</label>
+								<input type="email" class="contact_phone" name="contact_phone" id="contact_phone">
+							</p>
+							<p>
+							<label for="contact_Dropdown">Reason for contact:</label>
+								<select id="contact_Dropdown" name="contact_Dropdown">
+									<option value="Business Querry">Business Querry</option>
+									<option value="General Question">General Question</option>
+									<option value="Job Application">Job Application</option>
+								</select>
+							</p>
+							<div class="form-group">
+								<label for="contact_Comment">Comment:</label>
+								<textarea class="form-control" rows="5" name="contact_Comment" id="contact_Comment"></textarea>
+							</div>
+							<div style="display: flex; justify-content: space-around;">
+								<button type="submit" class="btn btn-outline-success">Submit</button>
+								<button type="reset" class="btn btn-outline-danger">Reset</button>
+							</div>
+						</form>
+					</div>
+					<div class="col-4" style="background-color:azure; border-left: solid 3px gray;">
+					</div>
+				</div>
+			
+			
+			</div>
+			<div class="col-2" style="background-color: lightslategray;"></div>
+		</div>
+	
+	
+	</div>
+</body>
+</html>
